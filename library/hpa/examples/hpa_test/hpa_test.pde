@@ -10,7 +10,8 @@ void setup() {
   Serial.println(x._2double());
   Serial.println(HPA::xONE._2float());
   Serial.println(HPA::xTWO._2float());
-  Serial.println(sizeof(short));
+  Serial.println((HPA::xTWO + HPA::xONE)._2double());
+  
 }
 
 void loop () {

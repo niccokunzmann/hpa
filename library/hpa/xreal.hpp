@@ -86,6 +86,9 @@ class xreal {
   friend xreal acosh (const xreal& v);
   friend xreal pow (const xreal& x, const xreal& y);
   
+ private:
+  struct xpr br; /* binary representation */
+  static struct xoutflags ioflags; /* output flags */
  public:
   xreal (const struct xpr* px = &xZero) : br(*px) { }
   xreal (struct xpr x) : br(x) { }
@@ -231,9 +234,6 @@ class xreal {
   static signed char get_padding (void) {
     return ioflags.padding;
   }
- private:
-  struct xpr br; /* binary representation */
-  static struct xoutflags ioflags; /* output flags */
 };
 
  int xmatherrcode ();
