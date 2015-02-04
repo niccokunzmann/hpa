@@ -56,7 +56,7 @@ xfmod (struct xpr s, struct xpr t, struct xpr *q)
 }
 
 struct xpr
-xfrexp (struct xpr s, int *p)
+xfrexp (struct xpr s, INT32 *p)
 {
   unsigned short *ps = (unsigned short *) &s, u;
 

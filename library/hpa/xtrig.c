@@ -118,7 +118,7 @@ static struct xpr
 c_tan (struct xpr z)
 {
   struct xpr s, f, d;
-  int m;
+  INT32 m;
   unsigned short k;
 
   if (x_exp (&z) < xK_lin)

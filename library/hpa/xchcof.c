@@ -24,10 +24,10 @@
 #include "xpre.h"
 
 struct xpr*
-xchcof (int m, struct xpr (*xfunc) (struct xpr))
+xchcof (INT32 m, struct xpr (*xfunc) (struct xpr))
 {
   struct xpr a, b, *c, *cs;
-  int i, j, k, n;
+  INT32 i, j, k, n;
 
   if (m > XMAX_DEGREE)
     m = XMAX_DEGREE;

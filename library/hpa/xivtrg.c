@@ -27,7 +27,7 @@ struct xpr
 xatan (struct xpr z)
 {
   struct xpr s, f;
-  int k, m;
+  INT32 k, m;
 
   if ((k = x_exp (&z)) < xK_lin)
     return z;

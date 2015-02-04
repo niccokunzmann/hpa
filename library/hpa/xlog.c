@@ -27,7 +27,7 @@ struct xpr
 xlog (struct xpr z)
 {
   struct xpr f, h;
-  int k, m;
+  INT32 k, m;
 
   if ((xsigerr ((x_neg (&z)) || x_exp (&z) == -xBias, XEDOM, "xlog()")))
     return xMinf;
@@ -53,7 +53,7 @@ struct xpr
 xlog2 (struct xpr z)
 {
   struct xpr f, h;
-  int k, m;
+  INT32 k, m;
 
   if ((xsigerr ((x_neg (&z)) || x_exp (&z) == -xBias, XEDOM, "xlog2()")))
     return xMinf;

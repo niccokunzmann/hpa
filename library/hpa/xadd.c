@@ -27,7 +27,7 @@ xadd (struct xpr s, struct xpr t, int f)
 {
   unsigned short pe[XDIM + 1], h, u;
   register unsigned short *pa, *pb, *pc, *pf = pe;
-  register unsigned int n = 0;
+  register unsigned INT32 n = 0;
   short e;
   register short k;
 

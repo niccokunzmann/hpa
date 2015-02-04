@@ -40,7 +40,7 @@ xabs (struct xpr s)
   return s;
 }
 
-int
+INT32
 x_exp (const struct xpr *ps)
 {
   unsigned short *q = (unsigned short *) ps;
@@ -48,7 +48,7 @@ x_exp (const struct xpr *ps)
   return (*q & xM_exp) - xBias;
 }
 
-int
+INT32
 x_neg (const struct xpr *ps)
 {
   unsigned short *q = (unsigned short *) ps;

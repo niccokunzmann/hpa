@@ -35,7 +35,7 @@
 */
 
 static void
-nullify (int skip, unsigned short *p, int k)
+nullify (INT32 skip, unsigned short *p, int k)
 {
   int i;
   unsigned short mask = 0xffff;
@@ -106,7 +106,7 @@ xfrac (struct xpr x)
 {
   unsigned short u, *p;
   short e;
-  int n;
+  INT32 n;
 
   canonic_form (&x);
   p = (unsigned short *) &x;

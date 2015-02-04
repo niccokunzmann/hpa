@@ -27,7 +27,7 @@ xmul (struct xpr s, struct xpr t)
 {
   unsigned short pe[XDIM + 2], *q0, *q1, h;
   register unsigned short *pa, *pb, *pc;
-  unsigned int m, n, p;
+  unsigned INT32 m, n, p;
   short e;
   register short k;
 

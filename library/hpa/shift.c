@@ -22,7 +22,7 @@
 #include "xpre.h"
 
 void
-xlshift (int n, unsigned short *pm, int m)
+xlshift (INT32 n, unsigned short *pm, INT32 m)
 {
   unsigned short *pa, *pc;
 
@@ -44,7 +44,7 @@ xlshift (int n, unsigned short *pm, int m)
 }
 
 void
-xrshift (int n, unsigned short *pm, int m)
+xrshift (INT32 n, unsigned short *pm, INT32 m)
 {
   unsigned short *pa, *pc;
 

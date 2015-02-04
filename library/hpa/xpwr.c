@@ -23,7 +23,7 @@
 #include "xpre.h"
 
 struct xpr
-xpwr (struct xpr s, int n)
+xpwr (struct xpr s, INT32 n)
 {
   struct xpr t;
   unsigned k, m;
@@ -57,7 +57,7 @@ xpwr (struct xpr s, int n)
 }
 
 struct xpr
-xpr2 (struct xpr s, int m)
+xpr2 (struct xpr s, INT32 m)
 {
   unsigned short *p = (unsigned short *) &s;
   long e;

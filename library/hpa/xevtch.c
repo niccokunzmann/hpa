@@ -23,7 +23,7 @@
 #include "xpre.h"
 
 struct xpr
-xevtch (struct xpr z, struct xpr *a, int m)
+xevtch (struct xpr z, struct xpr *a, INT32 m)
 {
   struct xpr *p, f, t, tp, w;
 

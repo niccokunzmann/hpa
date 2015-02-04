@@ -27,7 +27,7 @@ xexp2 (struct xpr x)
 {
   struct xpr s, d, f;
   unsigned short *pf = (unsigned short *) &x;
-  int m, k;
+  INT32 m, k;
 
   if (xprcmp (&x, &xE2min) < 0)
     return xZero;

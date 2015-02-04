@@ -94,11 +94,11 @@ operator/ (const xreal& x1, const xreal& x2)
   return xreal(xdiv (x1.br, x2.br));
 }
 
-xreal
-operator% (const xreal& x1, int n)
-{
-  return xpr2 (x1.br, n);
-}
+//xreal
+//operator% (const xreal& x1, int n)
+//{
+//  return xpr2 (x1.br, n);
+//}
 
 int
 operator== (const xreal& x1, const xreal& x2)
@@ -192,7 +192,7 @@ abs (const xreal& s)
 }
 
 xreal
-frexp (const xreal& s, int *p)
+frexp (const xreal& s, INT32 *p)
 {
   return xfrexp (s.br, p);
 }
@@ -212,7 +212,7 @@ fmod (const xreal& s, const xreal& t)
 }
 
 xreal
-sfmod (const xreal& s, int *p)
+sfmod (const xreal& s, INT32 *p)
 {
   return xsfmod (s.br, p);
 }

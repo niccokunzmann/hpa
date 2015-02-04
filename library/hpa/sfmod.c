@@ -23,7 +23,7 @@
 #include "xpre.h"
 
 struct xpr
-xsfmod (struct xpr s, int *p)
+xsfmod (struct xpr s, INT32 *p)
 {
   unsigned short *pa, *pb;
   short e, k;

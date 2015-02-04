@@ -26,7 +26,7 @@ struct xpr
 xtanh (struct xpr z)
 {
   struct xpr s, d, f;
-  int m, k;
+  INT32 m, k;
 
   if ((k = x_exp (&z)) > xK_tanh)
     {
@@ -56,7 +56,7 @@ xtanh (struct xpr z)
 struct xpr
 xsinh (struct xpr z)
 {
-  int k;
+  INT32 k;
 
   if ((k = x_exp (&z)) < xK_lin)
     return z;
