@@ -93,10 +93,10 @@ class xreal {
   xreal (const struct xpr* px = &xZero) : br(*px) { }
   xreal (struct xpr x) : br(x) { }
   xreal (double x) {
-    br = flttox (x);
+    br = dbltox (x);
   }
   xreal (float x) {
-    br = flttox (x);
+    br = dbltox (x);
   }
   xreal (int n) {
     br = inttox (n);
@@ -120,6 +120,9 @@ class xreal {
     br = x.br;
   }
   /* Assignment operators */
+  void set (const xreal& x) {
+    br = x.br; 
+  }
   xreal& operator= (const xreal& x) {
     br = x.br; 
     return *this;
@@ -184,7 +187,7 @@ class xreal {
   }
   /* Functions for conversions */
   double _2double () const {
-    return xtoflt(br);
+    return xtodbl(br);
   }
   float _2float() const {
     return xtoflt(br);
