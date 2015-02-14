@@ -3,6 +3,7 @@
 
 #define HPA_VERSION 	 "1.7"
 #define XLITTLE_ENDIAN 	 1
+// 7 11 15 19 23 27 31
 #define XDIM 		 7
 #define XULONG_BITSIZE 	 32
 #define XERR_DFL 	 1
