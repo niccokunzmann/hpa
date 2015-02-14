@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <float.h>
 #include "xpre.h"
+#include <math.h>
 
 /*
        An extended floating point number is represented as a combination of the
@@ -57,6 +58,9 @@ xtoflt (struct xpr s)
   unsigned short pe[2], *pc, u;
   short i, e;
 
+  if (xisNaN(&s)) {
+    return NAN;
+  }
   pc = (unsigned short *) &s;
   u = *pc & xM_sgn;
   e = (*pc & xM_exp) - xF_bias;
