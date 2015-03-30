@@ -98,7 +98,10 @@ flttox (float y)
 {
   unsigned short pe[XDIM + 1], *pc, u;
   short i, e;
-
+  
+  if (isnan(y)) {
+    return xNaN;
+  }
   if (y < FLT_MIN && y > -FLT_MIN)
     return xZero;
   pc = (unsigned short *) &y;
